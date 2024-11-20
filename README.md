@@ -1,3 +1,30 @@
+Project Requirements Survey App
+This React-based application allows users to fill out a dynamic project requirements survey. The form schema is editable in JSON format, enabling customization of the form fields, options, and validation rules. The form can be previewed in real-time, and users can submit the form data, which is saved as a JSON file. Additionally, users can copy the form schema as JSON to the clipboard, making it easy to share or save for future use.
+
+Features:
+Dynamic Form Generation: Based on a configurable JSON schema, the form fields are dynamically generated, supporting different input types such as text, email, select, radio buttons, and textarea.
+JSON Schema Editor: The form schema can be edited directly in a JSON editor, and changes are reflected in the form preview immediately.
+Dark Mode: The application includes a dark mode toggle for a customizable user experience.
+Submit as JSON: Form submissions are downloaded as a JSON file, making it easy to store or process the data programmatically.
+Copy Form JSON: A button allows users to copy the form schema as JSON to the clipboard for sharing or saving.
+How to Use:
+Edit the form schema in the JSON editor.
+Fill out the form preview on the right side of the screen.
+Submit the form to download the data as a JSON file.
+Use the "Copy Form JSON" button to copy the form schema to your clipboard.
+Installation:
+Clone the repository:
+git clone https://github.com/yourusername/project-requirements-survey.git
+
+Navigate to the project folder:
+cd project-requirements-survey
+
+Install dependencies:
+npm install
+
+Start the application:
+npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
