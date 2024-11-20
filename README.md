@@ -1,4 +1,4 @@
-Project Requirements Survey App
+Project Requirements Survey App.
 This React-based application allows users to fill out a dynamic project requirements survey. The form schema is editable in JSON format, enabling customization of the form fields, options, and validation rules. The form can be previewed in real-time, and users can submit the form data, which is saved as a JSON file. Additionally, users can copy the form schema as JSON to the clipboard, making it easy to share or save for future use.
 
 Features:
@@ -7,11 +7,13 @@ JSON Schema Editor: The form schema can be edited directly in a JSON editor, and
 Dark Mode: The application includes a dark mode toggle for a customizable user experience.
 Submit as JSON: Form submissions are downloaded as a JSON file, making it easy to store or process the data programmatically.
 Copy Form JSON: A button allows users to copy the form schema as JSON to the clipboard for sharing or saving.
+
 How to Use:
 Edit the form schema in the JSON editor.
 Fill out the form preview on the right side of the screen.
 Submit the form to download the data as a JSON file.
 Use the "Copy Form JSON" button to copy the form schema to your clipboard.
+
 Installation:
 Clone the repository:
 git clone https://github.com/yourusername/project-requirements-survey.git
@@ -24,6 +26,145 @@ npm install
 
 Start the application:
 npm start
+
+
+Sample JSON Schema
+{
+
+  "formTitle": "Project Requirements Survey",
+
+  "formDescription": "Please fill out this survey about your project needs",
+
+  "fields": [
+
+    {
+
+      "id": "name",
+
+      "type": "text",
+
+      "label": "Full Name",
+
+      "required": true,
+
+      "placeholder": "Enter your full name"
+
+    },
+
+    {
+
+      "id": "email",
+
+      "type": "email",
+
+      "label": "Email Address",
+
+      "required": true,
+
+      "placeholder": "you@example.com",
+
+      "validation": {
+
+        "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+
+        "message": "Please enter a valid email address"
+
+      }
+
+    },
+
+    {
+
+      "id": "companySize",
+
+      "type": "select",
+
+      "label": "Company Size",
+
+      "required": true,
+
+      "options": [
+
+        { "value": "1-50", "label": "1-50 employees" },
+
+        { "value": "51-200", "label": "51-200 employees" },
+
+        { "value": "201-1000", "label": "201-1000 employees" },
+
+        { "value": "1000+", "label": "1000+ employees" }
+
+      ]
+
+    },
+
+    {
+
+      "id": "industry",
+
+      "type": "radio",
+
+      "label": "Industry",
+
+      "required": true,
+
+      "options": [
+
+        { "value": "tech", "label": "Technology" },
+
+        { "value": "healthcare", "label": "Healthcare" },
+
+        { "value": "finance", "label": "Finance" },
+
+        { "value": "retail", "label": "Retail" },
+
+        { "value": "other", "label": "Other" }
+
+      ]
+
+    },
+
+    {
+
+      "id": "timeline",
+
+      "type": "select",
+
+      "label": "Project Timeline",
+
+      "required": true,
+
+      "options": [
+
+        { "value": "immediate", "label": "Immediate (within 1 month)" },
+
+        { "value": "short", "label": "Short-term (1-3 months)" },
+
+        { "value": "medium", "label": "Medium-term (3-6 months)" },
+
+        { "value": "long", "label": "Long-term (6+ months)" }
+
+      ]
+
+    },
+
+    {
+
+      "id": "comments",
+
+      "type": "textarea",
+
+      "label": "Additional Comments",
+
+      "required": false,
+
+      "placeholder": "Any other details you'd like to share..."
+
+    }
+
+  ]
+
+}
+
 
 # Getting Started with Create React App
 
